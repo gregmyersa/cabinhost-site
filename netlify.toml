@@ -1,0 +1,8 @@
+[build]
+  publish = "site"
+  # No build command: the studio app renders finished HTML and commits it.
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
